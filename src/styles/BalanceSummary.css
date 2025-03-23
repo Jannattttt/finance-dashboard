@@ -1,0 +1,140 @@
+.balance-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .summary-card {
+    background-color: var(--bg-white);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    transition: transform 0.2s;
+  }
+  
+  .summary-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: rgba(67, 97, 238, 0.1);
+  }
+  
+  .income .card-icon {
+    background-color: rgba(76, 201, 240, 0.1);
+  }
+  
+  .expenses .card-icon {
+    background-color: rgba(247, 37, 133, 0.1);
+  }
+  
+  .savings .card-icon {
+    background-color: rgba(58, 134, 255, 0.1);
+  }
+  
+  .card-content {
+    flex: 1;
+  }
+  
+  .summary-card h4 {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin: 0 0 8px 0;
+    font-weight: 500;
+  }
+  
+  .amount {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+  }
+  
+  .income .amount {
+    color: var(--income-color);
+  }
+  
+  .expenses .amount {
+    color: var(--expense-color);
+  }
+  
+  .savings .amount {
+    color: var(--primary-color);
+  }
+  
+  .change-indicator {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+  }
+  
+  .change-indicator.positive {
+    color: var(--success-color);
+  }
+  
+  .change-indicator.negative {
+    color: var(--danger-color);
+  }
+  
+  .change-arrow {
+    font-weight: bold;
+  }
+  
+  .change-value {
+    font-weight: 600;
+  }
+  
+  .change-period {
+    color: var(--text-secondary);
+    margin-left: 4px;
+  }
+  
+  .savings-ratio {
+    margin-top: 8px;
+  }
+  
+  .savings-progress-bar {
+    height: 6px;
+    background-color: rgba(67, 97, 238, 0.1);
+    border-radius: 3px;
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+  
+  .savings-progress {
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+  }
+  
+  .savings-percent {
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+  
+  @media (max-width: 992px) {
+    .balance-summary {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .balance-summary {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  

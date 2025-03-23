@@ -1,0 +1,123 @@
+.plaid-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .plaid-description {
+    margin-bottom: 20px;
+    color: #7f8c8d;
+  }
+  
+  .plaid-info {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .plaid-info h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .plaid-info ol {
+    padding-left: 20px;
+    color: #7f8c8d;
+  }
+  
+  .plaid-info li {
+    margin-bottom: 5px;
+  }
+  
+  .bank-selection-form {
+    margin-bottom: 20px;
+  }
+  
+  .connect-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .connect-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .connect-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  .plaid-security-note {
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    padding: 15px;
+    border-left: 4px solid #27ae60;
+  }
+  
+  .plaid-security-note h4 {
+    color: #27ae60;
+    margin-bottom: 5px;
+  }
+  
+  .plaid-security-note p {
+    color: #2c3e50;
+    font-size: 14px;
+  }
+  
+  .connection-success {
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .success-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #27ae60;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto 20px;
+  }
+  
+  .connection-success h3 {
+    color: #27ae60;
+    margin-bottom: 10px;
+  }
+  
+  .connection-success p {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  
+  .disconnect-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .disconnect-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  

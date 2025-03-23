@@ -1,0 +1,107 @@
+/* .balance-chart-container {
+  height: 100%;
+} */
+
+.chart-period-selector {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.period-btn {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background-color: transparent;
+  transition: all 0.2s;
+}
+
+.period-btn:hover {
+  background-color: var(--secondary);
+}
+
+.period-btn.active {
+  background-color: var(--primary);
+  color: white;
+}
+
+.balance-chart {
+  height: 200px;
+  width: 100%;
+}
+
+.chart-tooltip {
+  background-color: white;
+  border-radius: 4px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--border-color);
+}
+
+.tooltip-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin: 0 0 4px 0;
+}
+
+.tooltip-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0;
+}
+
+.chart-details {
+  margin-top: 16px;
+  background-color: var(--secondary);
+  border-radius: var(--border-radius);
+  padding: 16px;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.chart-details h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.chart-detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.chart-detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.detail-label {
+  color: var(--text-secondary);
+}
+
+.detail-value {
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .chart-period-selector {
+    justify-content: space-between;
+  }
+
+  .period-btn {
+    flex: 1;
+    text-align: center;
+    padding: 6px 0;
+  }
+}
+
